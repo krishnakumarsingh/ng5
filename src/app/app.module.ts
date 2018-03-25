@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -8,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CardComponent } from './card/card.component';
 import { CardListComponent } from './card-list/card-list.component';
+import { NewCardInputComponent } from './new-card-input/new-card-input.component';
 
 
 @NgModule({
@@ -16,11 +18,14 @@ import { CardListComponent } from './card-list/card-list.component';
     HomeComponent,
     AboutComponent,
     CardComponent,
-    CardListComponent
+    CardListComponent,
+    NewCardInputComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
